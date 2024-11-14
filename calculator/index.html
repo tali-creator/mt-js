@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="w-[300px] p-2 h-[400px] border-2 ml-20 mt-10 bg-black rounded-b-xl rounded-t-lg">
+        <div id="displayScreen" class="w-full h-[70px] bg-green-200 rounded-md">
+            <div class="w-full h-1/2 text-sm font-semibold italic p-2">
+                
+            </div>
+            <div class="w-full h-1/2 p-2 text-end font-semibold italic ">
+            
+            </div>
+        </div>
+        <div class="mt-4 rounded-xl w-full h-[290px] bg-stone-200">
+            <div class="flex justify-between items-center">
+                <button class="bg-red-700  text-white w-16 py-1 font-bold italic rounded-br-xl rounded-tl-xl rounded-sm">off</button>
+                <button class="bg-stone-700  text-white w-16 py-1 font-bold italic rounded-bl-xl rounded-tr-xl rounded-sm">On</button>
+            </div>
+            <div class="flex justify-end space-x-2 items-center mt-2 pr-2">
+                <button class="special w-10 pt-1 bg-stone-700 rounded-lg text-white font-bold">C</button>
+                <button class="special w-10 pt-1 bg-stone-700 rounded-lg text-white font-bold">Del</button>
+            </div>
+            <div class="w-full flex flex-row mt-4">
+                <div class="w-full p-2 grid grid-cols-3 grid-rows-4 gap-5 ">
+                    <div  class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-700 text-white font-bold  hover:bg-stone-500">1</div>
+                    <div  class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-700 text-white font-bold  hover:bg-stone-500">2</div>
+                    <div  class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-700 text-white font-bold  hover:bg-stone-500">3</div>
+                    <div  class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-700 text-white font-bold  hover:bg-stone-500">4</div>
+                    <div  class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-700 text-white font-bold  hover:bg-stone-500">5</div>
+                    <div  class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-700 text-white font-bold  hover:bg-stone-500">6</div>
+                    <div  class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-700 text-white font-bold  hover:bg-stone-500">7</div>
+                    <div  class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-700 text-white font-bold  hover:bg-stone-500">8</div>
+                    <div  class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-700 text-white font-bold  hover:bg-stone-500">9</div>
+                    <div  class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-700 text-white font-bold  hover:bg-stone-500">0</div>
+                    <div  class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-700 text-white font-bold  hover:bg-stone-500">00</div>
+                    <div  class="operation hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-900 text-white font-bold  hover:bg-stone-500">=</div>
+                </div>
+                <div class="flex-col mt-2 w-20 space-y-5 ">
+                    <div class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-900 text-white font-bold  hover:bg-stone-500">/</div>
+                    <div class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-900 text-white font-bold  hover:bg-stone-500">*</div>
+                    <div class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-900 text-white font-bold  hover:bg-stone-500">+</div>
+                    <div class="keys hover:cursor-pointer border py-0.5 text-center rounded-lg bg-stone-900 text-white font-bold  hover:bg-stone-500">-</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

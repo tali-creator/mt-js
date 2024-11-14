@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <style>
+        .container{
+            width: 50%;
+            margin: 0px auto;
+            background-color: rgb(243, 241, 241);
+        }
+        #header{
+            width: 100%;
+            background-color:rgb(218, 218, 218) ;
+            display: flex;
+            justify-content: center;
+            padding: 5px 0px;
+        }
+        input{
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+        }
+        li{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 40px 10px 0px;
+            color: rgb(80, 77, 77);
+        }
+        li:hover{
+            background-color: rgb(218, 218, 218);
+            transition: all 0.3s ;
+        }
+        .footer{
+            width: 100%;
+            padding: 5px 0px;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(218, 218, 218);
+        }
+        button{
+            padding: 5px;
+            background-color: rgb(55, 228, 55);
+            width: 50px;
+            border: none;
+            color: white;
+            border-radius: 0px 5px 5px 0px;
+            cursor: pointer;
+        }
+        .delete{
+            background-color: red;
+            padding: 5px;
+            color: white;
+            border-radius: 5px;
+        }
+        .delete:hover{
+            background-color: rgb(149, 60, 60);
+            cursor: pointer;
+            z-index: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <form id="search" action="">
+                <input type="search">
+            </form>
+        </div>
+        <div id="main">
+            <ul id="list">
+                <li>
+                    <span class="item">Car</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="item">Sneakers</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="item">Samsung s25 ultra</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="item">Washing Machine</span>
+                    <span class="delete">delete</span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <form id="add-item" action="">
+                <input type="text">
+                <button>Add</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
