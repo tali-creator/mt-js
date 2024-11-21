@@ -22,9 +22,10 @@ addTodo.addEventListener("submit", function (e) {
     if (input.value === "") {
         alert("you must enter a text")
     } else {
+        const inputToUpperCase = input.value.charAt(0).toUpperCase() + input.value.slice(1);
         ul.innerHTML += ` <li class="hover:bg-stone-100 p-3 items-center sm:text-sm font-bold flex">
-                    <span class="pr-2 text-md">${counter++}</span>
-                    <span id="todo" class="no-scrollbar overflow-x-scroll pt-1 w-full">${input.value}</span>
+                    <span class="pr-2 pt-1 text-md">${counter++}</span>
+                    <span id="todo" class="no-scrollbar overflow-x-scroll pt-1 w-full">${inputToUpperCase}</span>
                         <div id="function" class="flex flex-none space-x-2">
                             <span class="hover:cursor-pointer delete bg-red-500 px-2 py-1 rounded-lg hover:bg-red-700 text-white">delete</span>
                             <span class="hover:cursor-pointer completed bg-green-500 px-2 py-1 rounded-lg hover:bg-green-700 text-white">Completed</span>
